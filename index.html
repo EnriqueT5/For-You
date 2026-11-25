@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#f8edf0" name="theme-color"/>
+<meta content="Una carta, un pequeño cine y un universo de cosas bonitas. Un regalo interactivo hecho con cariño." name="description"/>
+<title>Un universo para ti ✨</title>
+<!-- La fuente web es opcional: carga de forma asíncrona; sin internet usa Georgia/Arial. -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer src="art.js"></script>
+<script defer src="script.js"></script>
+</head>
+<body data-scene="cover">
+<div aria-hidden="true" class="grain"></div>
+<div aria-hidden="true" class="sparkles-layer" id="sparkles-layer"></div>
+
+<main>
+<!-- CAPÍTULO 1 · EL SOBRE -->
+<section aria-hidden="false" aria-label="Primera escena: abrir el sobre" class="scene scene-cover is-active" id="scene-cover">
+<div aria-hidden="true" class="ambient-circle ambient-circle-1"></div>
+<div aria-hidden="true" class="ambient-circle ambient-circle-2"></div>
+<span aria-hidden="true" class="cover-ornament cover-ornament-1">✺</span>
+<span aria-hidden="true" class="cover-ornament cover-ornament-2">✦</span>
+<span aria-hidden="true" class="cover-ornament cover-ornament-3">✳</span>
+<div class="cover-content">
+
+
+
+<div class="envelope-zone fade-in-4">
+<div aria-hidden="true" class="floating-heart heart-left">♥</div>
+<div aria-hidden="true" class="floating-heart heart-right">♥</div>
+<button aria-label="Abrir el sobre y leer la carta" class="envelope-button" id="open-envelope" type="button">
+<span class="envelope-shadow"></span>
+<span class="envelope">
+<span class="envelope-back"></span>
+<span class="envelope-paper"><span class="paper-mini-star">✧</span><span>Para ti,<br/>con cariño</span></span>
+<span class="envelope-flap"></span>
+<span class="envelope-front"></span>
+<span class="envelope-seal">♥</span>
+</span>
+</button>
+</div>
+
+
+<button aria-label="Abrir el sobre" class="open-hint" id="open-envelope-text" type="button"><span aria-hidden="true" class="open-hint-arrow">↑</span><span>Ábreme</span><span aria-hidden="true" class="open-hint-star">✦</span></button></div>
+</section>
+<!-- CAPÍTULO 2 · LA CARTA -->
+<section aria-hidden="true" aria-label="Segunda escena: una carta especial" class="scene scene-letter" id="scene-letter">
+
+
+<div class="letter-container">
+
+<div class="letter-sheet">
+<div aria-hidden="true" class="letter-corner letter-corner-tl">✦</div>
+<div aria-hidden="true" class="letter-corner letter-corner-br">✦</div>
+<div aria-hidden="true" class="letter-stamp">♥<span>SOLO PARA TI</span></div>
+<p class="letter-date">31/07</p>
+<h2>Querida <em>Kim</em></h2>
+<div class="letter-message" id="letter-message">
+<p>Se me ocurrió que una carta normal no era suficiente para reunir tantas cosas bonitas.</p>
+<p>Así que imaginé un pequeño universo hecho de flores, atardeceres, historias románticas, peluches, matcha y todos esos detalles que te gustan.</p>
+<p>Porque a veces un gesto sencillo puede decir algo muy grande: <strong>mereces cosas que te hagan sonreír.</strong></p>
+</div>
+<p class="letter-signature">Con cariño,<br/><span id="letter-signature">Alguien que quiso hacerte sonreír ♡</span></p>
+<button class="primary-button letter-next" id="go-cinema" type="button">Tengo otra sorpresa para ti <span aria-hidden="true">→</span></button></div>
+
+
+</div>
+</section>
+<!-- CAPÍTULO 3 · EL CINE -->
+<section aria-hidden="true" aria-label="Tercera escena: cine con créditos espaciales" class="scene scene-cinema" id="scene-cinema">
+
+<div class="theater-shell">
+
+<div class="theater-screen">
+<div aria-hidden="true" class="cinema-stars" id="cinema-stars"></div>
+<div aria-hidden="true" class="film-vignette"></div>
+<div class="crawl-mask">
+<div class="crawl-content" id="crawl-content">
+<div class="crawl-inner">
+<p class="crawl-kicker">EN UNA GALAXIA LLENA DE PEQUEÑOS DETALLES...</p>
+<h3>LA MAGIA<br/>DE SER TÚ</h3>
+<p>Hay historias que comienzan con una casualidad. Otras, con una sonrisa. Esta empieza con las pequeñas cosas que te gustan.</p>
+<p>Con las rosas y los tulipanes. Con las mariposas, los atardeceres y los días de lluvia que parecen sacados de una película.</p>
+<p>Con un helado, un buen matcha, una historia romántica, una canción bonita y las fotos que guardan recuerdos.</p>
+<p>Con el rosa, los detalles dorados, los abrazos y esa magia especial que tiene la Navidad.</p>
+<p>Y si esta fuera una película, no necesitaría un final perfecto. Bastaría con que su protagonista recordara lo especial que es.</p>
+<p class="crawl-finale">CONTINUARÁ... ✦</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</section>
+<!-- CAPÍTULO 4 · PEQUEÑAS ESCENAS QUE COBRAN VIDA -->
+<section aria-hidden="true" aria-label="Carrusel de pequeñas animaciones de las cosas que te gustan" class="scene scene-finale" id="scene-finale">
+  <div id="finale-slider" class="finale-slider" role="region" aria-roledescription="carrusel" aria-label="Escenas animadas: toca los lados, utiliza las flechas o desliza" tabindex="0">
+    <div id="living-gallery" class="living-gallery" aria-live="off" aria-label="Escenas animadas">
+      <div class="finale-outro carousel-slide" id="finale-outro" role="group" aria-roledescription="diapositiva" aria-label="Mensaje final">
+        <span aria-hidden="true" class="outro-heart">♡</span>
+        <h2>Ojalá la vida te regale<br><em>muchas cosas bonitas.</em></h2>
+        <p>Y que nunca te falten motivos para sonreír.</p>
+        <button class="replay-button" type="button" id="restart-story">Volver a abrir la carta <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+    <button class="carousel-arrow carousel-prev" id="carousel-prev" type="button" aria-label="Ver animación anterior" title="Anterior"><span aria-hidden="true">‹</span></button>
+    <button class="carousel-arrow carousel-next" id="carousel-next" type="button" aria-label="Ver siguiente animación" title="Siguiente"><span aria-hidden="true">›</span></button>
+    <div class="carousel-meta" aria-live="polite" aria-atomic="true"><span id="carousel-count">01 / 17</span><span class="carousel-swipe-hint" id="carousel-swipe-hint">Desliza o toca los lados para continuar</span></div>
+  </div>
+</section>
+</main>
+<!-- Música continua: el usuario añade su propia copia legal del MP3 desde aquí o la carpeta assets. -->
+<div class="music-widget" id="music-widget" hidden>
+  <button type="button" id="music-toggle" class="music-toggle" aria-label="Elegir canción" title="Elegir canción">
+    <span aria-hidden="true" class="music-icon">♫</span>
+    <span id="music-label">Añadir canción</span>
+  </button>
+  <input id="music-file" type="file" accept="audio/*,.mp3,.m4a,.ogg,.wav" hidden aria-label="Seleccionar archivo de la canción" />
+  <audio id="background-music" loop preload="none"></audio>
+</div>
+</body>
+</html>
